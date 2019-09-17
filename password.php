@@ -3,7 +3,7 @@ session_start();
 $_SESSION["loginname"] = $_POST["username"];
 $_SESSION["pass"] = $_POST["pass"];
 
-if($_SESSION["loginname"] != "komuro" || $_SESSION["pass"] != "pass"){
+if($_SESSION["loginname"] != "hcy" || $_SESSION["pass"] != "hcytest"){
     ?>
     ログインに失敗しました。<br />
     <a href="login.html">セッション生成ページ</a>
