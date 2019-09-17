@@ -1,26 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-<title></title>
-<script type="text/javascript" src="password.php")></script>
-<script type="text/javascript">
-function password_check(){
-    var pw;
-    pw = document.getElementById('EnterPassWord').value;
-  if(pw != password){
-    alert("パスワードが違います");
-  }else{
-    alert("認証をクリアしました");
-    //location.href=pw + ".html";
-  }
-}
-</script>
-</head>
-<body>
-<form>
-<input id="EnterPassWord"type="password" size="20">
-<input type="button" value="認証" onclick="password_check();">
-</form>
-</body>
+<html>
+    <head>
+        <title>ログイン</title>
+    </head>
+    <body>
+        <form action="password.php" method = "post">  //（１）
+            ユーザーネーム<input type ="text" name="username" value = ""><br />   //（２）
+            パスワード<input type = "text" name="pass" value = ""><br />
+            <input type="submit" name ="login" value = "ログイン">   //（３）
+        </form>
+    </body>
 </html>
